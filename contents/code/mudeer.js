@@ -102,24 +102,28 @@ registerShortcut("Mudeer Fullscreen Right", prefix+"Fullscreen Right Half", "Met
 registerShortcut("Mudeer Fullscreen Left", prefix+"Fullscreen Left Half", "Meta+Left", function () {
     fullscreen(workspace, 1, true)})
 
-// Screen by Multiple Thirds Bottom
-registerShortcut("Mudeer Left Multi Bottom", prefix+"Two-Thirds Left", "Meta+Num+4", function () {
+// Screen by Multiple Thirds
+registerShortcut("Mudeer Left Two-Thirds", prefix+"Two-Thirds Left", "Meta+Num+4", function () {
     move(workspace, 6,0,4,0)})
-registerShortcut("Mudeer Center Multi Bottom", prefix+"Two-Thirds Center", "Meta+Num+5", function () {
+registerShortcut("Mudeer Center Two-Thirds ", prefix+"Two-Thirds Center", "Meta+Num+5", function () {
     move(workspace, 6,1,4,0)})
-registerShortcut("Mudeer Right Multi Bottom", prefix+"Two-Thirds Right", "Meta+Num+6", function () {
+registerShortcut("Mudeer Right Two-Thirds", prefix+"Two-Thirds Right", "Meta+Num+6", function () {
     move(workspace, 6,2,4,0)})
 
 // Screen by Thirds
-registerShortcut("Mudeer Left", prefix+"Third Left", "Meta+Num+7", function () {
+registerShortcut("Mudeer Left Third", prefix+"Third Left", "Meta+Num+7", function () {
     move(workspace, 3,0,1,0)})
-registerShortcut("Mudeer Center", prefix+"Third Center", "Meta+Num+8", function () {
+registerShortcut("Mudeer Center Third", prefix+"Third Center", "Meta+Num+8", function () {
     move(workspace, 3,1,1,0)})
-registerShortcut("Mudeer Right", prefix+"Third Right", "Meta+Num+9", function () {
+registerShortcut("Mudeer Right Third", prefix+"Third Right", "Meta+Num+9", function () {
     move(workspace, 3,2,1,0)})
 
 // Screen By Quarters
-registerShortcut("Mudeer Far Left", prefix+"Quarter Far Left", "Meta+Num+1", function () {
+registerShortcut("Mudeer Left Quarter", prefix+"Quarter Far Left", "Meta+Num+1", function () {
     move(workspace, 4,0,1,0)})
-registerShortcut("Mudeer Far Right", prefix+"Quarter Far Right", "Meta+Num+3", function () {
+registerShortcut("Mudeer Left alt Quarter", prefix+"Quarter Far Right", "Meta+Num+2", function () {
+    move(workspace, 4,1,1,0)})
+registerShortcut("Mudeer Right alt Quarter", prefix+"Quarter Far Right", "Meta+Num+.", function () {
+    move(workspace, 4,2,1,0)})
+registerShortcut("Mudeer Right Quarter", prefix+"Quarter Far Right", "Meta+Num+3", function () {
     move(workspace, 4,3,1,0)})
